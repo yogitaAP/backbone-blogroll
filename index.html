@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Blogroll App</title>
+</head>
+<body>
+	<div><h1>Backbone Blogroll App</h1></div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Author</th>
+				<th>Title</th>
+				<th>URL</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td><input class="author-input"></input></td>
+				<td><input class="title-input"></input></td>
+				<td><input class="url-input"></input></td>
+				<td><button class="add-blog">Add blog</button></td>
+			</tr>
+		</thead>
+		<tbody class="blogs-list"></tbody>
+	</table>
+
+	<script type="text/template" class="blogs-list-template">
+		<td><span class="author"><%= author %></span></td>
+		<td><span class="title"><%= title %></span></td>
+		<td><span class="url"><%= url %></span></td>
+		<td><button class="btn edit-blog">Edit</button></td>
+		<td><button class="btn delete-blog">Delete</button></td>
+		<td><button style="display: none" class="btn update-blog">Update</button></td>
+		<td><button style="display: none" class="btn cancel-blog">Cancel</button></td>
+	</script>
+
+
+	<script src="lib/jquery-1.2.4.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="lib/localStorage.js"></script>
+    <script src="js/models/question.js"></script>
+    <script src="js/collections/questions.js"></script>
+    <script src="js/views/question-view.js"></script>
+    <script src="js/views/app-view.js"></script>
+    <script src="js/routers/router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
